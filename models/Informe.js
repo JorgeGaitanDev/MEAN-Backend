@@ -1,12 +1,16 @@
 const mongoose = require('mongoose');
 
 const InformeSchema = mongoose.Schema({
+    fecha_aplicaci_n: {
+        type: String,
+        required: true
+    },
     a_o: {
-        type: Number,
+        type: String,
         required: true
     },
     cod_territorio: {
-        type: Number,
+        type: String,
         required: true
     },
     nom_territorio: {
@@ -14,7 +18,11 @@ const InformeSchema = mongoose.Schema({
         required: true
     },
     cantidad_dosis_aplicadas: {
-        type: Number,
+        type: String,
+        required: true
+    },
+    fecha_corte: {
+        type: String,
         required: true
     },
     fechaCreacion: {
